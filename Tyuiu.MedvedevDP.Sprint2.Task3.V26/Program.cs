@@ -8,6 +8,6 @@ internal class Program
         double x = Convert.ToDouble(Console.ReadLine());
 
         double result = dataService.Calculate(x);
-        Console.WriteLine(Math.Round(result, 3));
+        Console.WriteLine(result);
     }
 }

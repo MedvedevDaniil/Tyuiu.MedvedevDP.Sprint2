@@ -9,24 +9,24 @@ namespace Tyuiu.MedvedevDP.Sprint2.Task3.V26.Lib
             {
                 double cosX2 = Math.Cos(x * x);
                 double baseValue = (x + 1) / cosX2;
-                return x + Math.Pow(baseValue, x);
+                return Math.Round(x + Math.Pow(baseValue, x),3);
             }
             else if (x == 0)
             {
                 double sinX2 = Math.Sin(x * x); 
                 double denominator = 9 - sinX2; 
-                return (15 + x) / denominator; 
+                return Math.Round((15 + x) / denominator,3); 
             }
             else if (x > -30 && x < 0)
             {
                 double sinX3 = Math.Sin(x * x * x);
                 double denominator = x + 5;
                 double baseValue = sinX3 / denominator;
-                return Math.Pow(baseValue, x);
+                return Math.Round(Math.Pow(baseValue, x),3);
             }
             else 
             {
-                return 8 * x - 1 / x;
+                return Math.Round(8 * x - 1 / x,3);
             }
         }
     }
