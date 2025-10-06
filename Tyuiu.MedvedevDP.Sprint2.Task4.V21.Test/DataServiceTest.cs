@@ -9,11 +9,11 @@ namespace Tyuiu.MedvedevDP.Sprint2.Task4.V21.Test
         {
             DataService dataService = new DataService();
 
-            double x = 1;
-            double y = 2;
+            double x = 5;
+            double y = 5;
 
             double res = dataService.Calculate(x, y);
-            double wait = 0.719;
+            double wait = 0.943;
 
             Assert.AreEqual(wait, res);
         }
